@@ -6,7 +6,7 @@
 
 ## 移动端优化
 ### 常用css
-```javascrip
+```css
 user-select: none; // 禁止文字被选中
 outline:none; // 去除点击外边框,点击无轮廓
 -webkit-touch-callout: none; // 长按链接不弹出菜单
