@@ -13,3 +13,4 @@ outline:none; // 去除点击外边框,点击无轮廓
 -webkit-touch-callout: none; // 长按链接不弹出菜单
 -webkit-tap-highlight-color: rgba(0,0,0,0); // 去除点击高亮
 ```
+### 导航栏高度 88px，标签栏高度 98px（iphone5和6常用）。
