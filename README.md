@@ -1,10 +1,11 @@
 # 前端踩坑记
 无限期记录一下自己踩过的坑，前人栽树后人乘凉。
 
-## Visual Studio设置同步
+## 编辑器
+#### Visual Studio设置同步
 使用Setting Sync 插件管理。里面的code或Id用文件记住。
 
-## 移动端优化
+## 移动端
 ### 常用css
 ```css
 user-select: none; // 禁止文字被选中
