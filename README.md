@@ -8,10 +8,10 @@
 ## 移动端
 ### 常用css
 ```css
-user-select: none; // 禁止文字被选中
-outline:none; // 去除点击外边框,点击无轮廓
--webkit-touch-callout: none; // 长按链接不弹出菜单
--webkit-tap-highlight-color: rgba(0,0,0,0); // 去除点击高亮
+    user-select: none; // 禁止文字被选中
+    outline:none; // 去除点击外边框,点击无轮廓
+    -webkit-touch-callout: none; // 长按链接不弹出菜单
+    -webkit-tap-highlight-color: rgba(0,0,0,0); // 去除点击高亮
 ```
 ### rem适配(根据iphone6 375px->16px为标准)
 ```css
@@ -49,6 +49,12 @@ outline:none; // 去除点击外边框,点击无轮廓
         html {
             font-size: 27.31px;
         }
+    }
+```
+### vw适配 跟上面效果一样 不过好像没人这么用？
+```css
+    html {
+        font-size: 4.266667vw;
     }
 ```
 ### 导航栏高度 88px，标签栏高度 98px（iphone5和6常用）。
