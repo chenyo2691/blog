@@ -57,6 +57,22 @@
         font-size: 4.266667vw;
     }
 ```
+### rem计算
+// 1\. 按iPhone 6的视觉稿，基准字号为16px，
+因此可以设置一个LESS变量。
+@px: 16rem;
+```css
+   @px: 16rem;
+```
+// 2\. 通过LESS内置的除法自动运算。
+比如用到16px的字号时，写成16/@px即可，最后会计算成1rem。
+```css
+    .example {
+        font-size: 16/@px;
+        margin: 20/@px 0;
+        padding: 20/@px 10/@px;
+    }
+```
 ### 导航栏高度 88px，标签栏高度 98px（iphone5和6常用）。
 
 ## 前端编码规范
