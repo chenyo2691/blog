@@ -13,6 +13,44 @@ outline:none; // 去除点击外边框,点击无轮廓
 -webkit-touch-callout: none; // 长按链接不弹出菜单
 -webkit-tap-highlight-color: rgba(0,0,0,0); // 去除点击高亮
 ```
+### rem适配(根据iphone6 375px->16px为标准)
+```css
+    @media only screen and (min-width: 320px) {
+        html {
+            font-size: 13.65px;
+        }
+    }
+
+    @media only screen and (min-width: 360px) {
+        html {
+            font-size: 15.36px;
+        }
+    }
+
+    @media only screen and (min-width: 375px) {
+        html {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-width: 390px) {
+        html {
+            font-size: 16.64px;
+        }
+    }
+
+    @media only screen and (min-width: 414px) {
+        html {
+            font-size: 17.664px;
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        html {
+            font-size: 27.31px;
+        }
+    }
+```
 ### 导航栏高度 88px，标签栏高度 98px（iphone5和6常用）。
 
 ## 前端编码规范
