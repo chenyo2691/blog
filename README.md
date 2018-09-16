@@ -85,3 +85,4 @@
 
 ## 性能测试
 * Apache ab并发负载压力测试
+* cheerio：一个node的包，可以加载html内容，使用类似jquery的选择器搜索数据，用于爬虫。
