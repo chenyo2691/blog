@@ -12,17 +12,20 @@
   </div>
 ```
 并为各个父子组件的生命周期进行输出观察得到以下结论：
-从上到下将会执行每个组件的beforeCreate->created->beforeMount，随后将从里到外执行每个组件的mounted。
+从上到下将会执行每个组件的beforeCreate->created->beforeMount(特地用---来划分输出)，随后将从里到外执行每个组件的mounted。
 ```console from chrome
 parent beforeCreate
 parent created
 parent beforeMount
+---
 child beforeCreate
 child created
 child beforeMount
+---
 child2 beforeCreate
 child2 created
 child2 beforeMount
+---
 child mounted
 child2 mounted
 parent mounted
