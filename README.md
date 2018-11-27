@@ -11,8 +11,9 @@
     <child2 :prop1="prop2"></child2>
   </div>
 ```
-并为各个父子组件的生命周期进行输出观察得到以下结论：从上到下将会执行每个组件的beforeCreate->created->beforeMount，随后将从里到外执行每个组件的mounted。
-```console
+并为各个父子组件的生命周期进行输出观察得到以下结论：
+从上到下将会执行每个组件的beforeCreate->created->beforeMount，随后将从里到外执行每个组件的mounted。
+```console from chrome
 parent beforeCreate
 parent created
 parent beforeMount
@@ -26,7 +27,6 @@ child mounted
 child2 mounted
 parent mounted
 ```
-
 
 ## 编辑器
 #### Visual Studio设置同步
