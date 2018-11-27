@@ -1,6 +1,33 @@
 # 前端踩坑记
 无限期记录一下自己踩过的坑，前人栽树后人乘凉。
 
+## Vue相关
+### 父子组件之间的生命周期窥探
+假设有如下代码
+```vue
+  <div class="organization-container">
+    hello parent
+    <child :prop1="prop1"></child>
+    <child2 :prop1="prop2"></child2>
+  </div>
+```
+并为各个父子组件的生命周期进行输出观察得到以下结论：从上到下将会执行每个组件的beforeCreate->created->beforeMount，随后将从里到外执行每个组件的mounted。
+```console
+parent beforeCreate
+parent created
+parent beforeMount
+child beforeCreate
+child created
+child beforeMount
+child2 beforeCreate
+child2 created
+child2 beforeMount
+child mounted
+child2 mounted
+parent mounted
+```
+
+
 ## 编辑器
 #### Visual Studio设置同步
 使用Setting Sync 插件管理。里面的code或Id用文件记住。
