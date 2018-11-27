@@ -5,8 +5,8 @@
 ### 父子组件之间的生命周期窥探
 假设有如下代码
 ```vue
-  <div class="organization-container">
-    hello parent
+  <div>
+    i am parent
     <child :prop1="prop1"></child>
     <child2 :prop1="prop2"></child2>
   </div>
