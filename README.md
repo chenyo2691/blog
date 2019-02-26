@@ -31,6 +31,19 @@ child2 mounted
 parent mounted
 ```
 
+### 简单的基于 `vuejs` 的 `eventbus`
+1. 在main.js文件加入
+`Vue.prototype.$eventHub = new Vue()`
+
+2. 在监听页面加入
+`this.$eventHub.$on('fire', function (data) {});`
+
+3. 在发送页面加入
+`this.$eventHub.$emit('fire','data');`
+
+4. 记得取消监听，会消耗性能
+`this.$eventHub.$off('fire');`
+
 ## 编辑器
 #### Visual Studio设置同步
 使用Setting Sync 插件管理。里面的code或Id用文件记住。
